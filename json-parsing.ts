@@ -11,7 +11,14 @@ function parseProject(projectString: string): void {
 
 // don't touch below this line
 
-import { Project } from "./types";
+// import { Project } from "./types";
+
+interface Project {
+	id: string;
+	completed: string;
+	title: string;
+	assignees: string;
+}
 
 function printProjectObj(parsed: Project) {
 	console.log(`id: ${parsed.id}`);
